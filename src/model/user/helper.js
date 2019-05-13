@@ -3,7 +3,7 @@ export function updateUser(state, payload) {
     const users = state.users.asMutable({ deep: true });
     const userCount = users.length;
     for (let i = 0; i < userCount; i++) {
-        let user = users[i];
+        const user = users[i];
         if (id === user.id) {
             users[i] = {
                 ...user,
