@@ -65,13 +65,13 @@ class ProductList extends React.Component {
 
     jumpToNew = () => {
         const { match, history } = this.props;
-        history.push(match.path + '/new');
+        history.push(`${match.path  }/new`);
     };
 
     jumpToEdit = e => {
         const { id } = e.target.dataset;
         const { match, history } = this.props;
-        history.push(match.path + '/edit/' + id);
+        history.push(`${match.path  }/edit/${  id}`);
     };
 
     deleteProduct = async e => {
